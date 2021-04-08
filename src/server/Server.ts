@@ -23,7 +23,7 @@ class Server {
       
         io.on('connection', function(socket : socketIO.Socket) {
 
-            const name = r.getName();    
+            const name = r.generateName();
 
             console.log('user connected: ' + name);
 
